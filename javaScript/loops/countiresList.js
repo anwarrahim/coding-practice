@@ -10,6 +10,7 @@ The 5 largest countries in the world:
 - Pakistan
 */
 
+
 for( let i = 0; i < largeCountries.length; i++ ){
     console.log(largeCountries[i])
 }
