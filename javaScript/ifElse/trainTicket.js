@@ -24,6 +24,7 @@ function trainTicket(age){
     else{
         console.log("Senior citizen discount")
     }
+
 }
 
 trainTicket(23)
