@@ -13,6 +13,7 @@ let person = {
     country: "Pakistan",
     logData: function (){
         console.log(person.name +" is "+person.age+ " years old and lives in "+ person.country )
+
 }
 }
 
