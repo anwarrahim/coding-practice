@@ -5,6 +5,7 @@ let numRange = hand.length
 
 function rockPaperScissor(){
 
-     return Math.floor(Math.random() *numRange)
+     randomHand= Math.floor(Math.random() *numRange)
+    return hand[randomHand]
 }
 console.log(rockPaperScissor())
