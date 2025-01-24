@@ -1,0 +1,40 @@
+h2{
+    text-align: center;
+}
+.container-card{
+    width: 524px;
+    height: 542px;
+    background: white;
+    box-shadow: 3px 3px 30px black ;
+    margin: auto;
+    border-radius: 3.8px;
+   
+}
+.details-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    gap: 4px;
+}
+
+.details-card input{
+    /* outline: none; */
+    padding: 10px;
+    border-radius: 3px;
+    /* border-color: rgb(255, 255, 255); */
+}
+
+.details-card input:focus{
+    color: chocolate;
+    outline: none;
+    border-color:burlywood;
+    background-color: white;
+}
+
+.btn{
+    background-color: #16DB99;
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 24px;
+}
