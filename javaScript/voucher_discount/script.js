@@ -1,11 +1,29 @@
 
 
-const finalProductPrice = basePrice => `The product price is ${basePrice}`
+const finalProductPrice = (basePrice, userCode) => {
 
-const basePrice = 100
-console.log(finalProductPrice(200))
+    if(userCode){
+    const discount = getDiscount(userCode)
+    const finalPrice = basePrice - basePrice * discount
+    return finalPrice
+    }
+    else{
+        return basePrice
+    }
+
+}
 
 
+const getDiscount = codePromo => {
+    let promo = promos.find(promo => promo.code === codePromo)
+    // check if promo is defined and active
+    if(promo!==undefined && promo.isActive ){
+        return promo.amount/100
+    }
+  return 0
+}
+
+console.log(finalProductPrice(130, 'TOTALLY10'))
 
 const promos = [
     {code: 'TOTALLY10', amount: 10, isActive: true},
