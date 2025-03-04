@@ -3,13 +3,9 @@ function userName(name){
     console.log(name)
 }
 
-function greeting(greet){
+function greeting(greet, callback){
     console.log('Hello, how are you', greet)
+    callback()
 }
 
-function func(callback){
-
-}
-
-
-func()
+greeting()
