@@ -4,8 +4,9 @@ function userName(name){
 }
 
 function greeting(greet, callback){
+    
+    callback("Anwar Rahim")
     console.log('Hello, how are you', greet)
-    callback()
 }
 
-greeting()
+greeting('today', userName)
